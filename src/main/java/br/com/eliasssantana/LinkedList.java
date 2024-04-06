@@ -29,6 +29,7 @@ public class LinkedList<T> {
         }
     }
 
+
     @Override
     public String toString(){
         StringJoiner stringJoiner = new StringJoiner(" -> ","[", "]");
