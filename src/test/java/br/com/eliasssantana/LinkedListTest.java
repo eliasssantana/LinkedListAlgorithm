@@ -31,4 +31,34 @@ public class LinkedListTest {
         Assertions.assertEquals("[1 -> 2 -> 3 -> 4]", linkedList.toString());
     }
 
+    @Test
+    public void reverseLinkedList(){
+        LinkedList<String> linkedList = new LinkedList<>();
+        linkedList.add("s1");
+        linkedList.add("s2");
+        linkedList.add("s3");
+        linkedList.add("s4");
+
+        linkedList.reverse();
+
+        Assertions.assertEquals("[s4 -> s3 -> s2 -> s1]", linkedList.toString());
+    }
+
+    @Test
+    public void reverseIntegersLinkedList(){
+        LinkedList<Integer> linkedList = new LinkedList<>();
+
+        linkedList.add(1);
+        linkedList.add(2);
+        linkedList.add(3);
+        linkedList.add(4);
+        linkedList.add(5);
+
+        linkedList.reverse();
+
+        Assertions.assertEquals("[5 -> 4 -> 3 -> 2 -> 1]", linkedList.toString());
+    }
+
+
+
 }
